@@ -1,0 +1,15 @@
+@mixin flex($js: flex-start) {
+    display: flex;
+    align-items: center;
+    justify-content: $js;
+}
+
+@mixin center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@mixin transition($property: all) {
+    transition: $property .3s ease;
+}

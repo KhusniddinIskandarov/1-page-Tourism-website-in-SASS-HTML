@@ -56,6 +56,29 @@ input {
   font-size: 14px;
 }
 
+.container {
+  width: 1140px;
+  margin: 0 auto;
+}
+
+.sign-up, .sign-in {
+  display: inline-block;
+  padding: 15px 25px;
+  color: #ffffff;
+  font-weight: 500;
+}
+
+.sign-in {
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+.sign-in:hover {
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  color: #3b3735;
+}
+
 .nav {
   background-color: rgba(141, 141, 141, 0.5529411765);
   color: rgb(229.5, 229.5, 229.5);
@@ -64,6 +87,7 @@ input {
 .nav .container {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 .nav__logo {
   display: inline-block;
@@ -83,6 +107,7 @@ input {
 .nav__list {
   display: flex;
   align-items: center;
+  justify-content: flex-start;
 }
 .nav__item {
   margin-right: 30px;
@@ -96,22 +121,6 @@ input {
 }
 .nav__right {
   margin-left: auto;
-}
-.nav__right .sign-up, .nav__right .sign-in {
-  display: inline-block;
-  padding: 15px 35px;
-  color: #ffffff;
-  font-weight: 500;
-}
-.nav__right .sign-in {
-  border: 1px solid #ffffff;
-  border-radius: 30px;
-  transition: all 0.3s ease;
-}
-.nav__right .sign-in:hover {
-  background-color: #ffffff;
-  border: 1px solid transparent;
-  color: #3b3735;
 }
 
 /*# sourceMappingURL=main.css.map */
