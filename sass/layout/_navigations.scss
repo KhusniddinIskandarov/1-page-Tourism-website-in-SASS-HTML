@@ -1,7 +1,5 @@
 .nav {
-    background-color: $color-grey;
     color:darken($color-white, 10%);
-    margin-top: 50px;
     .container {
         @include flex;
     }
@@ -9,7 +7,7 @@
         display: inline-block;
         background-color: $color-primary;
         margin-right: 50px;
-        border-radius: 50%;
+        border-radius: 50%; 
         width: 50px;
         height: 50px;
         @include center;
@@ -22,7 +20,7 @@
         @include flex;
     }
     &__item {
-        margin-right: 30px;
+        margin-right: 15px;
     }
     &__link {
         padding: 5px;

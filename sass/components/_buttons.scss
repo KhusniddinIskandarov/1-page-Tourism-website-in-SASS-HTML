@@ -14,3 +14,15 @@
         color: $color-secondary;
     }
 }
+.btn {
+    display: inline-block;
+    padding: 15px 60px;
+    border-radius: 30px;
+    &--primary {
+        background-color: $color-primary;
+        @include transition;
+        &:hover {
+            background-color: darken($color-primary, 5%);
+        }
+    }
+}
