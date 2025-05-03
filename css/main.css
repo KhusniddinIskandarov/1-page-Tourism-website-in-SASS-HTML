@@ -56,4 +56,62 @@ input {
   font-size: 14px;
 }
 
+.nav {
+  background-color: rgba(141, 141, 141, 0.5529411765);
+  color: rgb(229.5, 229.5, 229.5);
+  margin-top: 50px;
+}
+.nav .container {
+  display: flex;
+  align-items: center;
+}
+.nav__logo {
+  display: inline-block;
+  background-color: #e76f51;
+  margin-right: 50px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.nav__logo img {
+  width: 44px;
+  border-radius: 50%;
+}
+.nav__list {
+  display: flex;
+  align-items: center;
+}
+.nav__item {
+  margin-right: 30px;
+}
+.nav__link {
+  padding: 5px;
+  transition: color 0.3s ease;
+}
+.nav__link:hover {
+  color: #ffffff;
+}
+.nav__right {
+  margin-left: auto;
+}
+.nav__right .sign-up, .nav__right .sign-in {
+  display: inline-block;
+  padding: 15px 35px;
+  color: #ffffff;
+  font-weight: 500;
+}
+.nav__right .sign-in {
+  border: 1px solid #ffffff;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+.nav__right .sign-in:hover {
+  background-color: #ffffff;
+  border: 1px solid transparent;
+  color: #3b3735;
+}
+
 /*# sourceMappingURL=main.css.map */
