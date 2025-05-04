@@ -37,3 +37,17 @@
         }
     }
 }
+
+.scroll-up {
+    display: inline-block;
+    width: 60px;
+    height: 60px;
+    background-color: $color-white;
+    color: $color-primary;
+    border-radius: $border-radius;
+    @include center;
+    transform: rotate(-90deg);
+    position: absolute;
+    right: 0;
+    top: -33%;
+}

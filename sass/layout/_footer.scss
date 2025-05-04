@@ -1,0 +1,45 @@
+.footer {
+    background-color: $color-bg-2;
+    padding-top: 100px;
+    padding-bottom: 60px;
+    border-radius: 200px 200px 0 0;
+    font-size: 16px;
+    .container {
+        position: relative;
+    }
+    &__text-box {
+        width: 45%;
+    }
+    &__list-box {
+        width: 50%;
+        li:not(:last-child) {
+            margin-bottom: 10px;
+        }
+    }
+    &__dowload {
+        width: 100%;
+        .dowload-link {
+            display: inline-block;
+            margin-right: 10px;
+        }
+    }
+    &__copy-right {
+        width: 100%;
+        text-align: center;
+    }
+
+
+    .dowload-link {
+        img {
+            width: 120px;
+        }
+        
+    }
+    .dowload-link:nth-child(3) {
+        img {
+            width: 154px;
+            position: relative;
+            top: 10px;
+        }
+    }
+}
