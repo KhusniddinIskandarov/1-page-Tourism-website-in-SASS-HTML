@@ -222,6 +222,51 @@ input {
   color: #ffffff;
 }
 
+.form__subtitle {
+  font-size: 16px;
+  margin-top: 14px;
+  margin-bottom: 30px;
+}
+.form__box {
+  background-color: #ffffff;
+  border-radius: 20px;
+  padding: 15px;
+  box-shadow: 5px 10px 30px rgba(59, 55, 53, 0.05);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.form__input {
+  outline: none;
+  width: 100%;
+  padding: 15px;
+  background-image: url("/image/email.png");
+  background-repeat: no-repeat;
+  background-position: 15px 50%;
+  text-indent: 30px;
+}
+.form__input:focus {
+  background-image: none;
+  text-indent: 0;
+}
+.form__submit {
+  width: 50px;
+  height: 50px;
+  background-color: #e76f51;
+  border-radius: 20px;
+  box-shadow: 5px 10px 30px rgba(231, 111, 81, 0.04);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s ease;
+}
+.form__submit:hover {
+  background-color: rgb(227.9090909091, 92.4545454545, 58.5909090909);
+}
+.form__submit img {
+  width: 25px;
+}
+
 .nav {
   color: #cccccc;
 }
@@ -328,6 +373,26 @@ input {
 }
 .explore__image-title {
   width: 120px;
+}
+
+.touch {
+  margin-top: 150px;
+}
+.touch__box {
+  background-color: #f8e1d8;
+  border-radius: 20px;
+  padding: 40px;
+  align-items: center;
+  background-image: url("/image/abstract-shape.png");
+  background-repeat: no-repeat;
+  background-position: 20% 60%;
+  box-shadow: 5px 30px 50px rgba(59, 55, 53, 0.05);
+}
+.touch .form {
+  width: 50%;
+}
+.touch__image {
+  width: 30%;
 }
 
 /*# sourceMappingURL=main.css.map */
