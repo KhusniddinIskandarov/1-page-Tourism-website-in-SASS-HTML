@@ -61,6 +61,19 @@ input {
   margin: 0 auto;
 }
 
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
 .sign-up, .sign-in {
   display: inline-block;
   padding: 15px 25px;
@@ -90,6 +103,29 @@ input {
 }
 .btn--primary:hover {
   background-color: rgb(227.9090909091, 92.4545454545, 58.5909090909);
+}
+
+.feature-box {
+  cursor: default;
+  padding: 60px 20px;
+  background-color: #ffffff;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+}
+.feature-box:hover {
+  transform: translateY(-15px) scale(1.02);
+}
+.feature-box .feature-image {
+  width: 80px;
+  height: 80px;
+}
+.feature-box .feature-title {
+  margin-top: 23px;
+  margin-bottom: 12px;
+}
+.feature-box .feature-text {
+  font-size: 16px;
 }
 
 .nav {
@@ -182,6 +218,10 @@ input {
 }
 .row .col-3-of-4 {
   width: calc(3 * (100% - 3 * 30px) / 4 + 2 * 30px);
+}
+
+.feature {
+  transform: translateY(-30%);
 }
 
 /*# sourceMappingURL=main.css.map */
