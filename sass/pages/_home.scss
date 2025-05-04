@@ -1,3 +1,11 @@
 .feature {
     transform: translateY(-30%);
 }
+.explore {
+    margin-top: 50px;
+    text-align: center;
+    &__title {
+        width: 40%;
+        margin: 0 auto;
+    }
+}
