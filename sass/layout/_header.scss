@@ -25,6 +25,9 @@
         @include responsive(desctop) {
             font-size: 70px;
         }
+        @include responsive(tab) {
+            font-size: 50px;
+        }
         margin-bottom: 60px;
     }
     &__link {

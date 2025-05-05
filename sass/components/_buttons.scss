@@ -62,13 +62,24 @@
     position: absolute;
     right: 10%;
     top: -33%;
-    transform: translateY(calc(-50% - 100px) );
-    transform: rotate(-90deg);
-    @include responsive(phone) {
-        right: 45%;
-        transform: translate(50%, calc(-50% - 100px ));
-        transform: rotate(-90deg);
-        top: -26%;
+    @include responsive(lg-desctop) {
+    right: 5%;
     }
+    @include responsive(desctop) {
+        right: 10%;
+        top: -30%;
+    }
+    @include responsive(tab) {
+        top: -25%;
+    }
+    
+    // transform: translateY(calc(-50% - 100px) );
+    transform: rotate(-90deg);
+    // @include responsive(phone) {
+    //     right: 45%;
+    //     transform: translate(50%, calc(-50% - 100px ));
+    //     transform: rotate(-90deg);
+    //     top: -26%;
+    // }
     
 }
