@@ -14,7 +14,7 @@
     &__text-box {
         width: 40%;
         @include responsive(lg-desctop) {
-            width: 50%;
+            width: 60%;
         }
         margin: 250px auto 0 auto;
         color: $color-white;
@@ -22,6 +22,9 @@
     }
     &__title {
         font-size: 80px;
+        @include responsive(desctop) {
+            font-size: 70px;
+        }
         margin-bottom: 60px;
     }
     &__link {

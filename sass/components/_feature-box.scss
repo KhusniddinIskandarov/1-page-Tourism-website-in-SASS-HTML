@@ -1,6 +1,9 @@
 .feature-box {
     cursor: default;
     padding: 60px 20px;
+    @include responsive(desctop) {
+        padding: 50px 30x;
+    }
     background-color: $color-white;
     border-radius: $border-radius;
     text-align: center;

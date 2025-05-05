@@ -4,6 +4,9 @@
     padding-bottom: 60px;
     border-radius: 200px 200px 0 0;
     font-size: 16px;
+    @include responsive(desctop) {
+        font-size: 14px;
+    }
     .container {
         position: relative;
         @include responsive(lg-desctop) {

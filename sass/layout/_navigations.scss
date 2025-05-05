@@ -18,6 +18,9 @@
     }
     &__list {
         @include flex;
+        @include responsive(desctop) {
+            display: none;
+        }
     }
     &__item {
         margin-right: 15px;
@@ -31,5 +34,8 @@
     }
     &__right {
         margin-left: auto;
+        @include responsive(desctop) {
+            display: none;
+        }
     }
 }
