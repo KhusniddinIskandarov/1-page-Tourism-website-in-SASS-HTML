@@ -3,14 +3,23 @@
     @include responsive(desctop) {
         transform: translateY(-20%);
     }
+    @include responsive(phone) {
+        transform: translateY(-15%);
+    }
 }
 .explore {
     margin-top: 50px;
+    @include responsive(phone) {
+        margin-top: 20px;
+    }
     text-align: center;
     &__title {
         width: 40%;
         @include responsive(lg-desctop) {
             width: 60%;
+        }
+        @include responsive(phone) {
+            width: 100%;
         }
         margin: 0 auto;
     }
@@ -21,6 +30,9 @@
 
 .touch {
     margin-top: 150px;
+    @include responsive(lg-desctop) {
+        margin-top: 100px;
+    }
     &__box {
         background-color: $color-bg-2;
         border-radius: $border-radius;

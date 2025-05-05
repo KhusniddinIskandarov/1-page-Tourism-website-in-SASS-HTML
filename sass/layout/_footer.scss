@@ -7,6 +7,9 @@
     @include responsive(desctop) {
         font-size: 14px;
     }
+    @include responsive(phone) {
+        border-radius: 100px 100px 0 0;
+    }
     .container {
         position: relative;
         @include responsive(lg-desctop) {
@@ -29,6 +32,9 @@
         @include responsive(tab) {
             width: 100%;
             margin-top: 40px;
+        }
+        @include responsive(phone) {
+            margin-bottom: 40px;
         }
         li:not(:last-child) {
             margin-bottom: 10px;

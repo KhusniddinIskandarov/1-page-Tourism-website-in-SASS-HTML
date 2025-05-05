@@ -4,6 +4,9 @@
     @include responsive(desctop) {
         padding: 50px 30x;
     }
+    @include responsive(phone) {
+        padding: 50px 70x;
+    }
     background-color: $color-white;
     border-radius: $border-radius;
     text-align: center;

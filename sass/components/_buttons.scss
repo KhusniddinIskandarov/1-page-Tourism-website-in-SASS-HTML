@@ -62,6 +62,7 @@
     position: absolute;
     right: 10%;
     top: -33%;
+    transform: rotate(-90deg);
     @include responsive(lg-desctop) {
     right: 5%;
     }
@@ -72,14 +73,11 @@
     @include responsive(tab) {
         top: -25%;
     }
-    
-    // transform: translateY(calc(-50% - 100px) );
-    transform: rotate(-90deg);
-    // @include responsive(phone) {
-    //     right: 45%;
-    //     transform: translate(50%, calc(-50% - 100px ));
-    //     transform: rotate(-90deg);
-    //     top: -26%;
-    // }
+    @include responsive(phone) {
+        right: 45%;
+        top: -18%;
+        transform: translateX(50%);
+        transform: rotate(-90deg);
+    }
     
 }

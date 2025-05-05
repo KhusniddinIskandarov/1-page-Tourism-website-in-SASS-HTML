@@ -21,6 +21,9 @@ h1 {
     @include responsive(desctop) {
        font-size: 35px;
     }
+    @include responsive(phone) {
+        font-size: 30px;
+    }
 }
 
 h2 {
