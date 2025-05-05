@@ -1,5 +1,8 @@
 .container {
     width: $container;
+    @include responsive(lg-desctop) {
+      width: 90%;
+  }
     margin: 0 auto;
 }
 .visually-hidden {

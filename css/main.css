@@ -1,3 +1,10 @@
+/* 
+0px - 576px -> phone
+576px -768px -> table
+768px - 992px -> desctop
+992px - 1200px -> lg-desctop 
+1200px - .. -> normal style
+*/
 html {
   scroll-behavior: smooth;
   box-sizing: border-box;
@@ -64,6 +71,11 @@ input {
 .container {
   width: 1140px;
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .container {
+    width: 90%;
+  }
 }
 
 .visually-hidden {
@@ -156,6 +168,11 @@ input {
   right: 0;
   top: -33%;
 }
+@media (max-width: 1200px) {
+  .scroll-up {
+    right: 5%;
+  }
+}
 
 .feature-box {
   cursor: default;
@@ -203,6 +220,7 @@ input {
   display: block;
 }
 .card__header > img {
+  width: 230px;
   height: 160px;
 }
 .card__like-btn {
@@ -349,6 +367,11 @@ input {
   color: #ffffff;
   text-align: center;
 }
+@media (max-width: 1200px) {
+  .header__text-box {
+    width: 50%;
+  }
+}
 .header__title {
   font-size: 80px;
   margin-bottom: 60px;
@@ -367,6 +390,11 @@ input {
 .footer .container {
   position: relative;
 }
+@media (max-width: 1200px) {
+  .footer .container {
+    padding: 0 10px;
+  }
+}
 .footer__text-box {
   width: 45%;
 }
@@ -383,17 +411,17 @@ input {
   display: inline-block;
   margin-right: 10px;
 }
-.footer__copy-right {
-  width: 100%;
-  text-align: center;
-}
-.footer .dowload-link img {
+.footer__dowload .dowload-link img {
   width: 120px;
 }
-.footer .dowload-link:nth-child(3) img {
+.footer__dowload .dowload-link:nth-child(3) img {
   width: 154px;
   position: relative;
   top: 10px;
+}
+.footer__copy-right {
+  width: 100%;
+  text-align: center;
 }
 
 .row {
@@ -434,6 +462,11 @@ input {
 .explore__title {
   width: 40%;
   margin: 0 auto;
+}
+@media (max-width: 1200px) {
+  .explore__title {
+    width: 50%;
+  }
 }
 .explore__image-title {
   width: 120px;

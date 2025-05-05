@@ -6,6 +6,9 @@
     font-size: 16px;
     .container {
         position: relative;
+        @include responsive(lg-desctop) {
+            padding: 0 10px;
+        }
     }
     &__text-box {
         width: 45%;
@@ -21,25 +24,20 @@
         .dowload-link {
             display: inline-block;
             margin-right: 10px;
+            img {
+                width: 120px;
+            }
+        }
+        .dowload-link:nth-child(3) {
+            img {
+                width: 154px;
+                position: relative;
+                top: 10px;
+            }
         }
     }
     &__copy-right {
         width: 100%;
         text-align: center;
-    }
-
-
-    .dowload-link {
-        img {
-            width: 120px;
-        }
-        
-    }
-    .dowload-link:nth-child(3) {
-        img {
-            width: 154px;
-            position: relative;
-            top: 10px;
-        }
     }
 }

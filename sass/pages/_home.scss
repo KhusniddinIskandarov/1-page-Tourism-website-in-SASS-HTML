@@ -6,6 +6,9 @@
     text-align: center;
     &__title {
         width: 40%;
+        @include responsive(lg-desctop) {
+            width: 50%;
+        }
         margin: 0 auto;
     }
     &__image-title {

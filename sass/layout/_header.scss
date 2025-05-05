@@ -13,6 +13,9 @@
     }
     &__text-box {
         width: 40%;
+        @include responsive(lg-desctop) {
+            width: 50%;
+        }
         margin: 250px auto 0 auto;
         color: $color-white;
         text-align: center;

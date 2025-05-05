@@ -13,3 +13,31 @@
 @mixin transition($property: all) {
     transition: $property .3s ease;
 }
+
+@mixin responsive($breakpoint) {
+
+    @if $breakpoint == phone {
+        @media (max-width: 576px) { @content };
+    }
+
+    @if $breakpoint == tab {
+        @media (max-width: 768px) { @content };
+    }
+
+    @if $breakpoint == desctop {
+        @media (max-width: 992px) { @content };
+    }
+
+    @if $breakpoint == lg-desctop {
+        @media (max-width: 1200px) { @content };
+    }
+    
+}
+
+/* 
+0px - 576px -> phone
+576px -768px -> table
+768px - 992px -> desctop
+992px - 1200px -> lg-desctop 
+1200px - .. -> normal style
+*/
