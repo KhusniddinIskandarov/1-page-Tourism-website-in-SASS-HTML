@@ -62,22 +62,23 @@
     position: absolute;
     right: 10%;
     top: -33%;
+    transform: translateY(calc(-50% - 100px));
     transform: rotate(-90deg);
-    @include responsive(lg-desctop) {
-    right: 5%;
-    }
-    @include responsive(desctop) {
-        right: 10%;
-        top: -30%;
-    }
-    @include responsive(tab) {
-        top: -25%;
-    }
+    // @include responsive(lg-desctop) {
+        // right: 5%;
+        // }
+        // @include responsive(desctop) {
+            //     right: 10%;
+            //     top: -30%;
+            // }
+            // @include responsive(tab) {
+                //     top: -25%;
+                // }
     @include responsive(phone) {
-        right: 45%;
-        top: -18%;
-        transform: translateX(50%);
+        transform: translate(50%, calc(-50% - 100px));
         transform: rotate(-90deg);
+        right: 43%;
+        top: -16%;
     }
     
 }

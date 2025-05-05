@@ -202,30 +202,15 @@ input {
   position: absolute;
   right: 10%;
   top: -33%;
+  transform: translateY(calc(-50% - 100px));
   transform: rotate(-90deg);
-}
-@media (max-width: 1200px) {
-  .scroll-up {
-    right: 5%;
-  }
-}
-@media (max-width: 992px) {
-  .scroll-up {
-    right: 10%;
-    top: -30%;
-  }
-}
-@media (max-width: 768px) {
-  .scroll-up {
-    top: -25%;
-  }
 }
 @media (max-width: 576px) {
   .scroll-up {
-    right: 45%;
-    top: -18%;
-    transform: translateX(50%);
+    transform: translate(50%, calc(-50% - 100px));
     transform: rotate(-90deg);
+    right: 43%;
+    top: -16%;
   }
 }
 
