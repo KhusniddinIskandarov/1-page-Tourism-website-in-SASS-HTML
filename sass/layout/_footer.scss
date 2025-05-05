@@ -15,15 +15,26 @@
     }
     &__text-box {
         width: 45%;
+        @include responsive(tab) {
+            width: 100%;
+            margin-bottom: 30px;
+            text-align: center;
+        }
     }
     &__list-box {
         width: 50%;
+        @include responsive(tab) {
+            width: 100%;
+        }
         li:not(:last-child) {
             margin-bottom: 10px;
         }
     }
     &__dowload {
         width: 100%;
+        @include responsive(tab) {
+            text-align: center;
+        }
         .dowload-link {
             display: inline-block;
             margin-right: 10px;
